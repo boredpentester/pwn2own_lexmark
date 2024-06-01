@@ -35,7 +35,7 @@ from idaapi import *
 
 struct_size = 0x10
 struct_objs = 1302
-start = get_name_ea_simple("sym_table") # must be defined! Lives at 0x00378A1C in Pakemaker_blasty
+start = get_name_ea_simple("sym_table") # must be defined! Lives at 0x00378A1C in Pagemaker
 end = start+(struct_size*struct_objs)
 
 print("Iterating from 0x%08x to 0x%08x" % (start, end))
