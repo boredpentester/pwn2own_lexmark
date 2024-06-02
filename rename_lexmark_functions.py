@@ -31,7 +31,7 @@ def printf_follow(addr):
     # the strings to the correct, expected values
     # then renames the reviewed function accordingly.
     # Hacky because we rename in this handler
-    if(GetMnem(xref_addr) == "LDR" and "- 0x" in GetOpnd(xref_addr, 1)):        
+    if(GetMnem(xref_addr) == "LDR" and "- 0x" in GetOpnd(xref_addr, 1)):
         print("--- Possible false positive @ 0x%08x. Checking." % xref_addr)
 
         # move forward n instructions
